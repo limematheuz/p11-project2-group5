@@ -1,5 +1,17 @@
+*{padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+@font-face{
+    font-family:alien;
+    src:url(../static/fonts/tipografia.ttf)
+}
+
+
+
 .titulo{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:alien;
 }
 
 li {
@@ -27,4 +39,5 @@ li {
 }
 .titulo{
     background:linear-gradient(green,white);
+    font-family:alien;
  }
