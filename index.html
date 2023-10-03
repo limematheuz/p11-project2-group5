@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UFO Cows Abduction</title>
+    <link rel="stylesheet" href="statics/css/styles.css" />
 </head>
 <body>
+    <!--
     <header>
         <h1 class="titulo">UFO Cows Abduction</h1>
     </header>
@@ -24,5 +26,18 @@
         </ul>
         <button type="reset">Borrar Opciones</button>
     </article>
+    -->
+    <h1>Lista de Nombres</h1>
+    <div>
+        <input type="text" id="nombre" placeholder="Nombre">
+        <button onclick="agregarNombre()">Agregar</button>
+    </div>
+    <ul id="listaNombres">
+        <!-- Los nombres se agregarán aquí -->
+    </ul>
+    <button onclick="borrarNombres()">Borrar Todos</button>
+    <button onclick="seleccionarAleatorio()">Seleccionar Aleatorio</button>
+
+    <script src="script.js"></script>
 </body>
 </html>
