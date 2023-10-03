@@ -3,18 +3,45 @@
     margin:0;
     box-sizing:border-box;
 }
-body {
-    background-image:url(/static/img/portada-banner-2.jpg);
-}
-
 
 @font-face{
     font-family:alien;
     src: url(/static/fonts/tipografia.ttf);
 }
 
+body{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.fondo{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 0;
+    object-fit: cover;
+    top: 0;
+} 
 
 
+.intro{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.nombres {
+    z-index: 90;
+    height: 1000px;
+}
+/*
 .titulo{
     font-family:alien;
 }
@@ -56,3 +83,4 @@ li {
     position: absolute;
 
  }
+ */

@@ -8,7 +8,15 @@
     <link rel="stylesheet" href="./static/fonts/tipografia.ttf">
 </head>
 <body>
-    <div class= "nombres">
+    <section class="intro">
+        <h1 class="titulo">
+            UFO CAMPERS ABDUCTION 
+        </h1>
+        <button type="submit">
+            Comezar ataque
+        </button>
+    </section>
+    <section class= "nombres">
     <h1>Lista de Nombres</h1>
     <div>
         <input type="text" id="nombre" placeholder="Nombre">
@@ -20,7 +28,9 @@
     <button onclick="borrarNombres()">Borrar Todos</button>
     <button onclick="seleccionarAleatorio()">Seleccionar Aleatorio</button>
     <div id="nombreSeleccionado"></div>
+    </section>
+    <img class= "fondo" src="/static/img/portada-banner.jpg" alt="backround">
     <script src="script.js"></script>
-    </div>
 </body>
+
 </html>
