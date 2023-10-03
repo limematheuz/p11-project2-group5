@@ -3,6 +3,10 @@
     margin:0;
     box-sizing:border-box;
 }
+body {
+    background-image:url(/static/img/portada-banner-2.jpg);
+}
+
 
 @font-face{
     font-family:alien;
@@ -42,4 +46,13 @@ li {
 .titulo{
     background:linear-gradient(green,white);
     font-family:alien;
+ }
+
+ .portada {
+    position: relative;
+ }
+
+ .nombres{
+    position: absolute;
+
  }
