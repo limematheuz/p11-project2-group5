@@ -28,8 +28,14 @@ function borrarNombres() {
 }
 
 function seleccionarAleatorio() {
-    const randomIndex = Math.floor(Math.random() * listaNombres.length);
-    const selectedName = listaNombres[randomIndex];
-    document.getElementById("MyElement").className += " MyClass";
-    alert(`Nombre seleccionado: ${selectedName}`);
+    if (listaNombres.length > 0) {
+        const randomIndex = Math.floor(Math.random() * listaNombres.length);
+        const selectedName = listaNombres[randomIndex];
+        
+        // Encuentra el div para mostrar el nombre seleccionado
+        const nombreSeleccionadoDiv = document.getElementById("nombreSeleccionado");
+        
+        // Muestra el nombre seleccionado en el div
+        nombreSeleccionadoDiv.textContent = `Nombre seleccionado: ${selectedName}`;
+    }
 }

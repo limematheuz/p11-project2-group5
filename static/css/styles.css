@@ -1,11 +1,12 @@
-*{padding:0;
+*{
+    padding:0;
     margin:0;
     box-sizing:border-box;
 }
 
 @font-face{
     font-family:alien;
-    src:url(../static/fonts/tipografia.ttf)
+    src: url(/static/fonts/tipografia.ttf);
 }
 
 
@@ -37,6 +38,7 @@ li {
     color: red;
     font-weight: bold;
 }
+
 .titulo{
     background:linear-gradient(green,white);
     font-family:alien;
