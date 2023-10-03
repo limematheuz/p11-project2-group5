@@ -25,3 +25,6 @@ li {
     color: red;
     font-weight: bold;
 }
+.titulo{
+    background:linear-gradient(green,white);
+ }
