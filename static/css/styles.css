@@ -6,7 +6,7 @@
 
 @font-face{
     font-family:alien;
-    src: url(/static/fonts/tipografia.ttf);
+    src: url(/static/fonts/alien.ttf);
 }
 
 body{
@@ -67,6 +67,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content:center;
+    font-family:font-texto;
 }
 
 .game-section-input p{
@@ -208,7 +209,13 @@ body{
     bottom: 0;
 }
 
+audio{
+    display:none;
+}
 
+.titulo{
+    font-family:alien;
+}
 
 /*
 .titulo{
