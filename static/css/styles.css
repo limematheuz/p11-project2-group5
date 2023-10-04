@@ -6,7 +6,12 @@
 
 @font-face{
     font-family:alien;
-    src: url(/static/fonts/alien.ttf);
+    src: url(/static/fonts/seamonster.ttf);
+}
+
+@font-face{
+    font-family:texto;
+    src: url(/static/fonts/font-texto.ttf);
 }
 
 body{
@@ -35,6 +40,15 @@ body{
     align-items: center;
     justify-content: center;
     z-index: 100;
+}
+
+.intro a {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgba(7, 246, 7, 0.303);
+    border: 2px solid rgb(7, 246, 7);
+    margin-top: 30px;
 }
 
 .game{
@@ -67,7 +81,8 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content:center;
-    font-family:font-texto;
+    font-family: texto;
+    
 }
 
 .game-section-input p{
@@ -177,8 +192,8 @@ body{
     display: flex;
     align-items: center;
     justify-content:space-between;
-    border: 1px solid white;
     min-width: 120px;
+    margin-right: 20px;
 }
 
 .user p{
@@ -186,6 +201,7 @@ body{
     color: white;
     letter-spacing: 1px;
     margin-right: 10px;
+    font-family: texto;
 }
 
 .user button{
@@ -215,6 +231,9 @@ audio{
 
 .titulo{
     font-family:alien;
+    color: rgb(11, 228, 11);
+    font-size: 4rem;
+    text-align: center;
 }
 
 /*
