@@ -1,36 +1,54 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UFO Cows Abduction</title>
     <link rel="stylesheet" href="./static/css/styles.css" />
-    <link rel="stylesheet" href="./static/fonts/tipografia.ttf">
-</head>
-<body>
+    <link rel="stylesheet" href="./static/fonts/tipografia.ttf" />
+  </head>
+  <body>
     <section class="intro">
-        <h1 class="titulo">
-            UFO CAMPERS ABDUCTION 
-        </h1>
-        <button type="submit">
-            Comezar ataque
-        </button>
+      <h1 class="titulo">UFO CAMPERS ABDUCTION</h1>
+      <button type="submit">Comezar ataque</button>
     </section>
-    <section class= "nombres">
-    <h1>Lista de Nombres</h1>
-    <div>
-        <input type="text" id="nombre" placeholder="Nombre">
+    <section class="game">
+      <section class="game-section-one">
+        <div class="game-section-input">
+          <p>Ingresar nombre de campistas</p>
+          <div>
+            <input type="text" placeholder="agregar nombre" />
+            <button><img src="" alt="" /></button>
+          </div>
+        </div>
+      </section>
+      <section class="game-section-two">
+        <div>
+          <div>
+            <div>
+              <p>jorge</p>
+              <button>eliminar</button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <button>Start</button>
+          <button>Reiniciar</button>
+        </div>
+      </section>
+      <!-- <h1>Lista de Nombres</h1>
+      <div>
+        <input type="text" id="nombre" placeholder="Nombre" />
         <button onclick="agregarNombre()">Agregar</button>
-    </div>
-    <ul id="listaNombres">
-        <!-- Los nombres se agregarán aquí -->
-    </ul>
-    <button onclick="borrarNombres()">Borrar Todos</button>
-    <button onclick="seleccionarAleatorio()">Seleccionar Aleatorio</button>
-    <div id="nombreSeleccionado"></div>
+      </div>
+      <ul id="listaNombres">
+      Los nombres se agregarán aquí 
+      </ul>
+      <button onclick="borrarNombres()">Borrar Todos</button>
+      <button onclick="seleccionarAleatorio()">Seleccionar Aleatorio</button>
+      <div id="nombreSeleccionado"></div> -->
     </section>
-    <img class= "fondo" src="/static/img/portada-banner.jpg" alt="backround">
+    <img class="fondo" src="/static/img/portada-banner.jpg" alt="backround" />
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
