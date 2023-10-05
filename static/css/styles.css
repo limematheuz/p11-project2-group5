@@ -54,16 +54,15 @@ body{
 .game{
     width: 100%;
     height: 100vh;
-    border: 1px solid white;
     z-index: 90;
     display: flex;
     align-items: center;
     justify-content:space-between;
     flex-direction: column;
+    position: relative;
 }
 
 .game-section-one{
-    border: 1px solid white;
     height: 150px;
     width: 100%;
     display:flex;
@@ -127,7 +126,6 @@ body{
 }
 
 .game-section-two{
-    border: 2px solid rgb(255, 255, 255);
     width: 100%;
     height: 100px;
     display: flex;
@@ -139,7 +137,6 @@ body{
 .list-name-section{
     width: 70%;
     height: 100%;
-    border: 2px solid green;
     display: flex;
     align-items: center;
     justify-content:center;
@@ -149,7 +146,6 @@ body{
 .btn-name-section{
     width: 30%;
     height: 100%;
-    border:2px solid yellow;
     display: flex;
     align-items: center;
     justify-content:center;
@@ -237,59 +233,137 @@ audio{
 
 .btn-cont{
     width: 60%;
-    border: 1px solid white;
     margin-top:-40px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
 }
 
 .btn-start{
     width: 100px;
     height: 100px;
     border-radius: 50%;
+    margin-right: 15px;
+    background-color: rgba(11, 228, 11, 0.356);
+    border: 3px solid rgb(11, 228, 11);
+}
 
+.btn-rest{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(255, 153, 0, 0.37);
+    border: 3px solid rgb(255, 187, 0);
 }
 
 
 
-/*
-.titulo{
-    font-family:alien;
-}
-
-li {
-    list-style: none;
-}
-
-.borrar {
-    color: red;
-    cursor: pointer;
-}
-
-li {
-    list-style: none;
-}
-
-.borrar {
-    color: red;
-    cursor: pointer;
-}
-
-.seleccionado {
-    border: 1px solid red;
-    color: red;
-    font-weight: bold;
-}
-
-.titulo{
-    background:linear-gradient(green,white);
-    font-family:alien;
- }
-
- .portada {
-    position: relative;
- }
-
- .nombres{
+.section-animation{
     position: absolute;
+    width: 40%;
+    height: 80vh;
+    z-index: 999;
+}
 
- }
- */
+.ovni{
+    width: 0px;
+    /* top: 150px;
+    left: 100px; */
+    position:absolute;
+    animation: intrOvni 9s ease-in-out;
+    z-index: 9999;
+}
+
+@keyframes intrOvni {
+    0% {
+        width: 0px;
+      top: 0px;
+      right: 0px;
+    }
+
+    20%{
+        width: 330px;
+        top: 100px;
+        right: 100px;
+    }
+    40%{
+        width: 330px;
+        top: 110px;
+        right: 100px;
+    }
+
+    60%{
+        width: 330px;
+        top: 100px;
+        right: 100px;
+    }
+
+    80%{
+        width: 330px;
+        top: 110px;
+        right: 100px;
+    }
+
+    100% {
+        width: 0px;
+        top: 0px;
+        right: 0px;
+    }
+  }
+
+.resplandor{
+    height: 450px;
+    width: 180px;
+    position: absolute;
+    top: 235px;
+    left: 170px;
+    animation: resplandorAnimation 7s;
+    animation-delay: 1.5s;
+    opacity: 0;
+}
+
+@keyframes resplandorAnimation {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.person{
+    width: 90px;
+    position: absolute;
+    bottom: 0px;
+    left: 40%;
+    animation: personAnimation 4s;
+    animation-delay: 2.5s;
+    opacity: 0;
+}
+
+@keyframes personAnimation {
+    0%{
+        opacity: 0;
+        bottom: 0px;
+    }
+    35%{
+        opacity: 1;
+        bottom: 200px;
+    }
+    55%{
+        opacity: 1;
+        bottom: 190px;
+    }
+    75%{
+        opacity: 1;
+        bottom: 200px;
+
+    }
+    100%{
+        opacity: 0;
+        bottom: 380px;
+    }
+}
