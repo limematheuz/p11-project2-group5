@@ -18,47 +18,31 @@
           <p>Ingresar nombres</p>
           <div class="input-section">
             <input
+              id="nombre"
               class="input-nombre"
               type="text"
               placeholder="agregar nombre"
             />
-            <button class="btn-input">
+            <button onclick="agregarNombre()" class="btn-input">
               <img class="check-btn" src="/static/img/check.svg" alt="check" />
             </button>
           </div>
         </div>
       </section>
+      <div id="nombreSeleccionado" ></div>
       <section class="game-section-two">
         <div class="list-name-section">
           <div class="box-gradient-list" >
             <div class="cont-list-name">
-              <div class="user">
-                <p>maria</p>
-                <button>
-                  <img
-                    class="btn-cerrar"
-                    src="/static/img/borrar-03.svg"
-                    alt="cerrar"
-                  />
-                </button>
-              </div>
-              <div class="user">
-                <p>maria</p>
-                <button>
-                  <img
-                    class="btn-cerrar"
-                    src="/static/img/borrar-03.svg"
-                    alt="cerrar"
-                  />
-                </button>
-              </div>
+              <ul id="listaNombres" class="user">
+              </ul>
             </div>
           </div>
         </div>
         <div class="btn-name-section">
           <div class="btn-cont" >
-            <button class="" >Start</button>
-            <button>Reiniciar</button>
+            <button onclick="seleccionarAleatorio()" class="btn-start" >Start</button>
+            <button onclick="borrarNombres()" >Reiniciar</button>
           </div>
         </div>
         <img
@@ -67,17 +51,6 @@
           alt="backround-two"
         />
       </section>
-      <!--<h1>Lista de Nombres</h1>
-      <div>
-        <input type="text" id="nombre" placeholder="Nombre" />
-        <button onclick="agregarNombre()">Agregar</button>
-      </div>
-      <ul id="listaNombres">
-       Los nombres se agregarán aquí
-      </ul>
-      <button onclick="borrarNombres()">Borrar Todos</button>
-      <button onclick="seleccionarAleatorio()">Seleccionar Aleatorio</button>
-      <div id="nombreSeleccionado"></div>--> 
     </section>
     <img class="fondo" src="/static/img/portada-banner.jpg" alt="backround" />
     <script src="script.js"></script>
