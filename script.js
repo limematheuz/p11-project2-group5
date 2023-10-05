@@ -1,33 +1,40 @@
-const listaNombres = [];
-const listaElement = document.getElementById("listaNombres");
+const listaCampers = [];   // listaNombres
+const elementCampers = document.getElementById("listaNombres");  // listaElement
+
+
 
 function agregarNombre() {
     // Obtener el valor del campo de entrada de texto
-    const nombreInput = document.getElementById("nombre");
-    const nombre = nombreInput.value.trim();
+    const camperRecibido = document.getElementById("nombre");  //nombreInput
+    const camper = camperRecibido.value.trim();  //nombre
 
     // Verificar que el nombre no esté vacío
-    if (nombre !== "") {
+    if (camper !== "") {
         // Agregar el nombre a la matriz listaNombres
-        listaNombres.push(nombre);
-        nombreInput.value = ""; // Limpiar el campo de entrada
+        listaCampers.push(camper);
+        camperRecibido.value = ""; // Limpiar el campo de entrada
 
         // Crear un nuevo elemento de lista (<li>) y agregarlo a la lista
         const li = document.createElement("li");
-        li.innerHTML = `${nombre} <span class="borrar" onclick="borrarNombre(${listaNombres.length - 1})">Eliminar</span>`;
-        listaElement.appendChild(li);
+        li.innerHTML = `${camper} <span class="borrar" onclick="borrarNombre(${listaCampers.length - 1})">Eliminar</span>`;
+        elementCampers.appendChild(li);
     }
 }
 
-function borrarNombre(index) {
-    listaNombres.splice(index, 1); // Elimina el nombre de la matriz
-    const listItem = listaElement.childNodes[index]; // Encuentra el elemento de lista a eliminar
-    listaElement.removeChild(listItem); // Elimina el elemento de lista
+
+
+function borrarNombre(campesinos) {
+    listaCampers.splice(campesinos, 1); // Elimina el nombre de la matriz
+    const listItem = elementCampers.childNodes[campesinos]; // Encuentra el elemento de lista a eliminar
+    elementCampers.removeChild(listItem); // Elimina el elemento de lista
 }
+
 
 
 function borrarNombres() {
-    listaNombres.length = 0; // Vacía la matriz listaNombres
-    listaElement.innerHTML = ""; // Elimina todos los elementos de la lista
+    listaCampers.length = 0; // Vacía la matriz listaNombres
+    elementCampers.innerHTML = ""; // Elimina todos los elementos de la lista
 }
+
+
 
