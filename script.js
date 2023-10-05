@@ -37,4 +37,17 @@ function borrarNombres() {
 }
 
 
-
+document.addEventListener("DOMContentLoaded", function() {
+    let botonAnimaciones = document.getElementById("activarAnimaciones");
+    let imagen1 = document.getElementById("ovniId");
+    let imagen2 = document.getElementById("resplandorId");
+    let imagen3 = document.getElementById("personId");
+  
+    // Agrega un evento de clic al botón
+    botonAnimaciones.addEventListener("click", function() {
+      // Agrega clases CSS con animaciones a las imágenes
+      imagen1.classList.toggle("ovni");
+      imagen2.classList.toggle("resplandor");
+      imagen3.classList.toggle("person");
+    });
+  });

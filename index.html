@@ -30,9 +30,9 @@
         </div>
       </section>
       <section class="section-animation" >
-        <img class="ovni" src="/static/img/ovni.png" alt="ovni">
-        <img class="resplandor" src="/static/img/resplandor.png" alt="resplandor">
-        <img class="person" src="/static/img/person.png" alt="person">
+        <img id="ovniId" class="ovni" src="/static/img/ovni.png" alt="ovni">
+        <img id="resplandorId" class="resplandor" src="/static/img/resplandor.png" alt="resplandor">
+        <img id="personId" class="person" src="/static/img/person.png" alt="person">
       </section>
       <div id="nombreSeleccionado"></div>
       <section class="game-section-two">
@@ -46,11 +46,11 @@
         </div>
         <div class="btn-name-section">
           <div class="btn-cont" >
-            <button onclick="seleccionarAleatorio()" class="btn-start" >Start</button>
+            <button id="activarAnimaciones" class="btn-start" >Start</button>
             <button onclick="borrarNombres()" class="btn-rest"  >Reiniciar</button>
           </div>
         </div>
-        <img
+        <img 
           class="fondo-two"
           src="/static/img/portada-banner-2.png"
           alt="backround-two"
