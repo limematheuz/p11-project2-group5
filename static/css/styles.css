@@ -481,4 +481,22 @@ body{
 }
 
 
+/* estilos placeholder*/
+
+input{
+    color: white;
+}
+
+input[type=text]{
+    text-align: center;
+}
+/*estilos lista*/
+
+ul {
+    color: white;
+    list-style: none;
+}
+ul[type=text]{
+    text-align: center;
+}
 

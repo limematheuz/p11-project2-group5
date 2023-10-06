@@ -76,3 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
     seleccionarAleatorio();
   });
 });
+
+//añadir sonido al hacer click
+
+let sound = new Audio()
