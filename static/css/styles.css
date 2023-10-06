@@ -169,7 +169,7 @@ body{
     display: flex;
     align-items: center;
     justify-content:start;
-    overflow: scroll;
+    overflow: scroll ;
 }
 
 .cont-list-name::-webkit-scrollbar {
@@ -485,6 +485,9 @@ body{
 
 input{
     color: white;
+    font-family: texto;
+    font-size: 20px;
+    letter-spacing: 1.5px;
 }
 
 input[type=text]{
@@ -495,8 +498,15 @@ input[type=text]{
 ul {
     color: white;
     list-style: none;
+    font-family: texto;
+    font-size: 20px;
+    letter-spacing: 1.5px;
 }
 ul[type=text]{
     text-align: center;
+}
+
+li{
+    margin: 10px;
 }
 
