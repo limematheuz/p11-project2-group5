@@ -67,9 +67,9 @@ document.addEventListener("DOMContentLoaded", function () {
   botonAnimaciones.addEventListener("click", function () {
 
     // Agrega clases CSS con animaciones a las imágenes
-    imagen1.classList.toggle("ovni");
-    imagen2.classList.toggle("resplandor");
-    imagen3.classList.toggle("person");
-    imagen4.classList.toggle("star");
+    imagen1.classList.toggle("animar");
+    imagen2.classList.toggle("animar");
+    imagen3.classList.toggle("animar");
+    imagen4.classList.toggle("animar");
   });
 });

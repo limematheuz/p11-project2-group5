@@ -369,11 +369,6 @@ body{
   }
 
 .resplandor{
-    height: 250px;
-    width: 200px;
-    position: absolute;
-    top: 32%;
-    left: 36%;
     opacity: 0;
 }
 
