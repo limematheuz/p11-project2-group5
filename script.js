@@ -73,3 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
     imagen4.classList.toggle("animar");
   });
 });
+
+//añadir sonido al hacer click
+
+let sound = new Audio()

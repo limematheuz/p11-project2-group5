@@ -459,3 +459,11 @@ input{
 input[type=text]{
     text-align: center;
 }
+/*estilos lista*/
+
+ul {
+    color: white;
+}
+ul[type=text]{
+    text-align: center;
+}
