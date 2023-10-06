@@ -73,3 +73,8 @@ document.addEventListener("DOMContentLoaded", function () {
     imagen4.classList.toggle("animar");
   });
 });
+let sound = new Audio('/static/mp3/ringtones-x-files.mp3')
+
+playBtn.addEventListener('click', ()=>{
+    sound.play();
+});
