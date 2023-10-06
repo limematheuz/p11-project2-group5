@@ -1,78 +1,100 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UFO Cows Abduction</title>
+    <link rel="stylesheet" href="./static/css/styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>UFO Cows Abduction</title>
-  <link rel="stylesheet" href="./static/css/styles.css" />
-</head>
-
-<body>
-  <section class="intro">
-    <h1 class="titulo">UFO<br />CAMPERS<br />ABDUCTION</h1>
-    <button class="btn-start">
-      <img id="playBtn" src="/static/img/alien2.png" class="img-start" alt="alien-start" />
-    </button>
-    <button><img id="pauseBtn" src="" class="img-pause" 
-      alt="alien-pause"></button>
-  </section>
-  <section id="inicio" class="game">
-    <section class="game-section-one">
-      <div class="game-section-input">
-        <p>Ingresar nombres</p>
-        <div class="input-section">
-          <input id="nombre" class="input-nombre" type="text" placeholder="agregar nombre"/>
-          <button onclick="agregarNombre()" class="btn-input">
-            <img class="check-btn" src="/static/img/check.svg" alt="check" />
-          </button>
-        </div>
-      </div>
+  <body>
+    <section class="intro">
+      <h1 class="titulo">UFO<br />CAMPERS<br />ABDUCTION</h1>
+      <button class="btn-audio">
+        <img
+          id="playBtn"
+          src="/static/img/alien2.png"
+          class="img-start"
+          alt="alien-start"
+        />
+      </button>
+      <button class="btn-pausa">
+        <img
+          id="pauseBtn"
+          src="/static/img/pause.png"
+          class="img-pause"
+          alt="alien-pause"
+        />
+      </button>
     </section>
-    <section class="section-animation">
-      <img id="ovniId" class="ovni" src="/static/img/ovni.png" alt="ovni" />
-      <img
-        id="resplandorId"
-        class="resplandor"
-        src="/static/img/resplandor.png"
-        alt="resplandor"
-      />
-      <img
-        id="personId"
-        class="person"
-        src="/static/img/person.png"
-        alt="person"
-      />
-      <img id="starId" class="star" src="/static/img/star.svg" alt="star" />
-    </section>
-    <div class="id-select" id="nombreSeleccionado"></div>
-    <section class="game-section-two">
-      <div class="list-name-section">
-        <div class="box-gradient-list">
-          <div class="cont-list-name">
-            <ul id="listaNombres" class="user"></ul>
+    <section id="inicio" class="game">
+      <section class="game-section-one">
+        <div class="game-section-input">
+          <p>Ingresar nombres</p>
+          <div class="input-section">
+            <input
+              id="nombre"
+              class="input-nombre"
+              type="text"
+              placeholder="agregar nombre"
+            />
+            <button onclick="agregarNombre()" class="btn-input">
+              <img class="check-btn" src="/static/img/check.svg" alt="check" />
+            </button>
           </div>
         </div>
-      </div>
-      <div class="btn-name-section">
-        <div class="btn-cont">
-          <button  id="activarAnimaciones" class="btn-start">
-            <img src="/static/img/aliens.svg" class="img-start" alt="alien-start" />
-          </button>
-          <button onclick="borrarNombres()" class="btn-rest">
-            <img src="/static/img/restart.svg" class="restart" alt="alien-start" />
-          </button>
+      </section>
+      <section class="section-animation">
+        <img id="ovniId" class="ovni" src="/static/img/ovni.png" alt="ovni" />
+        <img
+          id="resplandorId"
+          class="resplandor"
+          src="/static/img/resplandor.png"
+          alt="resplandor"
+        />
+        <img
+          id="personId"
+          class="person"
+          src="/static/img/person.png"
+          alt="person"
+        />
+        <img id="starId" class="star" src="/static/img/star.svg" alt="star" />
+        <div class="id-select" id="nombreSeleccionado"></div>
+      </section>
+      <section class="game-section-two">
+        <div class="list-name-section">
+          <div class="box-gradient-list">
+            <div class="cont-list-name">
+              <ul id="listaNombres" class="user"></ul>
+            </div>
+          </div>
         </div>
-      </div>
-      <img
-        class="fondo-two"
-        src="/static/img/portada-banner-2.png"
-        alt="backround-two"
-      />
+        <div class="btn-name-section">
+          <div class="btn-cont">
+            <button id="activarAnimaciones" class="btn-start">
+              <img
+                src="/static/img/aliens.svg"
+                class="img-start"
+                alt="alien-start"
+              />
+            </button>
+            <button onclick="borrarNombres()" class="btn-rest">
+              <img
+                src="/static/img/restart.svg"
+                class="restart"
+                alt="alien-start"
+              />
+            </button>
+          </div>
+        </div>
+        <img
+          class="fondo-two"
+          src="/static/img/portada-banner-2.png"
+          alt="backround-two"
+        />
+      </section>
     </section>
-  </section>
-  <img class="fondo" src="/static/img/portada-banner.jpg" alt="backround" />
-  <script src="script.js"></script>
-</body>
-
+    <img class="fondo" src="/static/img/portada-banner.jpg" alt="backround" />
+    <script src="script.js"></script>
+  </body>
 </html>

@@ -42,13 +42,34 @@ body{
     z-index: 100;
 }
 
-.intro a {
+
+.btn-audio {
     width: 100px;
     height: 100px;
     border-radius: 50%;
     background-color: rgba(7, 246, 7, 0.303);
     border: 2px solid rgb(7, 246, 7);
-    margin-top: 30px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.btn-audio:hover{
+    background-color: rgba(7, 246, 7, 0.425);
+    
+    .img-start{
+        transform: scale(1.1);
+    }
+}
+
+.btn-pausa{
+    background-color:transparent;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.img-pause{
+    width: 50px;
 }
 
 .game{
@@ -102,7 +123,7 @@ body{
     width: 70%;
     height: 50px;
     border-radius: 50px;
-    background-color: #00bafd5e;
+    background-color: #00bafd44;
     border: 2px solid #00B9FD;
 }
 
@@ -118,7 +139,13 @@ body{
     border-radius: 50%;
     background-color: rgba(0, 167, 0, 0.418);
     border: 3px solid rgb(0, 167, 0);
+    cursor: pointer;
 }
+
+.btn-input:hover{
+    background-color: rgba(0, 199, 0, 0.664);
+}
+
 
 .check-btn{
     width: 25px;
@@ -153,7 +180,7 @@ body{
 }
 
 .box-gradient-list{
-    width: 70%;
+    width: 90%;
     height: 70%;
     background-color: rgba(1, 107, 206, 0.377);
     display: flex;
@@ -236,9 +263,10 @@ li p {
 
 .titulo{
     font-family:alien;
-    color: rgba(11, 228, 11, 0.719);
-    font-size: 4rem;
+    color: rgb(11, 228, 11);
+    font-size: 5rem;
     text-align: center;
+    line-height: 1;
 }
 
 .btn-cont{
@@ -260,7 +288,7 @@ li p {
 }
 
 .img-start{
-    width: 45px;
+    width: 40px;
 }
 
 .btn-rest{
@@ -292,6 +320,7 @@ li p {
     position: absolute;
     width: 600px;
     height: 70%;
+    max-height: 600px;
     z-index: 999;
     display: flex;
     align-items: center;
@@ -307,10 +336,10 @@ li p {
 }
 
 .animar.star{
-    width:12px;
+    width:20px;
     position: absolute;
-    right: 20px;
-    top: 40px;
+    right: 0px;
+    top: 50px;
     opacity: 0;
     animation: star 1s;
     animation-delay: 9s;
@@ -467,13 +496,18 @@ li p {
 }
 
 .animar.id-select{
-    font-size:2.5rem;
+    font-size:2.8rem;
     z-index: 10000;
     font-family: alien;
-    color: white;
+    color: rgb(47, 255, 47);
     opacity: 0;
-    animation: idselect 4s;
-    animation-delay: 8s;
+    animation: idselect 5s;
+    animation-delay: 9s;
+    background: linear-gradient(to left, rgba(0, 245, 0, 0), rgba(0, 245, 0, 0.336), rgba(0, 245, 0, 0));
+    padding: 10px 25px;
+    border-radius:15px;
+    letter-spacing: -2px;
+    margin-top:80px;
 }
 
 
@@ -505,10 +539,13 @@ input{
 input[type=text]{
     text-align: center;
 }
-/*estilos lista*/
+
+
+
+
+
 
 
     
-
 
 
