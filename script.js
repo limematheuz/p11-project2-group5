@@ -1,17 +1,6 @@
 const listaCampers = []; // listaNombres
 const elementCampers = document.getElementById("listaNombres"); // listaElement
 
-let sound = new Audio('/static/mp3/ringtones-x-files.mp3')
-
-playBtn.addEventListener('click', ()=>{
-    sound.play();
-});
-
-pauseBtn.addEventListener('click', ()=>{
-    sound.pause();
-});
-
-
 function agregarNombre() {
   // Obtener el valor del campo de entrada de texto
   const camperRecibido = document.getElementById("nombre"); //nombreInput
@@ -23,7 +12,7 @@ function agregarNombre() {
     listaCampers.push(camper);
     camperRecibido.value = ""; // Limpiar el campo de entrada
 
-    // Crear un nuevo elemento de lista (<li>) y agregarlo a la lista
+    // Crear un nuevo elemento de lista y agregarlo a la lista
     const li = document.createElement("li");
     li.innerHTML = `<p>${camper}</p><button onclick="borrarNombre(${listaCampers.length - 1})"><img class="btn-cerrar" src="/static/img/borrar-03.svg" alt="cerrar"  /></button>`;
     elementCampers.appendChild(li);
@@ -44,7 +33,7 @@ function borrarNombres() {
 
 function seleccionarAleatorio() {
   if (listaCampers.length > 0) {
-    // Elimina la clase 'seleccionado' de todos los elementos de la lista
+    // Elimina la clase  de todos los elementos de la lista
     const listaItems = elementCampers.getElementsByTagName("li");
     for (const item of listaItems) {
       item.classList.remove("id-select");
@@ -52,9 +41,9 @@ function seleccionarAleatorio() {
     // Genera un índice aleatorio y selecciona un nombre aleatorio
     const randomIndex = Math.floor(Math.random() * listaCampers.length);
     const selectedName = listaCampers[randomIndex];
-    // Encuentra el elemento de lista correspondiente al nombre seleccionado y agrega la clase 'seleccionado'
+    // Encuentra el elemento de lista correspondiente al nombre seleccionado y agrega la clase 
     borrarNombre(randomIndex);
-    // Muestra el nombre seleccionado en el div 'nombreSeleccionado'
+    // Muestra el nombre seleccionado en el div 
     const nombreSeleccionadoDiv = document.getElementById("nombreSeleccionado");
     nombreSeleccionadoDiv.textContent = `Victima: ${selectedName}`;
     
@@ -72,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Agrega un evento de clic al botón
   botonAnimaciones.addEventListener("click", function () {
-    // Agrega clases CSS con animaciones a las imágenes
+    // Agrega clases con animaciones a las imágenes
     imagen1.classList.toggle("animar");
     imagen2.classList.toggle("animar");
     imagen3.classList.toggle("animar");
@@ -83,3 +72,12 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+let sound = new Audio('/static/mp3/ringtones-x-files.mp3')
+
+playBtn.addEventListener('click', ()=>{
+    sound.play();
+});
+
+pauseBtn.addEventListener('click', ()=>{
+    sound.pause();
+});
