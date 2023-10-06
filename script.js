@@ -14,7 +14,7 @@ function agregarNombre() {
 
     // Crear un nuevo elemento de lista (<li>) y agregarlo a la lista
     const li = document.createElement("li");
-    li.innerHTML = `${camper} <button onclick="borrarNombre(${
+    li.innerHTML = `<p>${camper}</p> <button onclick="borrarNombre(${
       listaCampers.length - 1
     })"  ><img class="btn-cerrar" src="/static/img/borrar-03.svg" alt="cerrar"  /></button>`;
     elementCampers.appendChild(li);
