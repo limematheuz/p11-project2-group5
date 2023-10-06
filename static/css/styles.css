@@ -449,3 +449,13 @@ body{
     font-family: alien;
 }
 
+
+/* estilos placeholder*/
+
+input{
+    color: white;
+}
+
+input[type=text]{
+    text-align: center;
+}
