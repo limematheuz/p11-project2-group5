@@ -51,7 +51,7 @@ function seleccionarAleatorio() {
 
     // Muestra el nombre seleccionado en el div 'nombreSeleccionado'
     const nombreSeleccionadoDiv = document.getElementById("nombreSeleccionado");
-    nombreSeleccionadoDiv.textContent = `Victima: ${selectedName}`;
+    nombreSeleccionadoDiv.textContent = `Victima:${selectedName}`;
   }
 }
 
