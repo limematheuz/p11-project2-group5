@@ -52,9 +52,9 @@ function seleccionarAleatorio() {
     // Muestra el nombre seleccionado en el div 'nombreSeleccionado'
     const nombreSeleccionadoDiv = document.getElementById("nombreSeleccionado");
     nombreSeleccionadoDiv.textContent = `Victima: ${selectedName}`;
-    
   }
 }
+
 
 document.addEventListener("DOMContentLoaded", function () {
   let botonAnimaciones = document.getElementById("activarAnimaciones");
@@ -62,14 +62,17 @@ document.addEventListener("DOMContentLoaded", function () {
   let imagen2 = document.getElementById("resplandorId");
   let imagen3 = document.getElementById("personId");
   let imagen4 = document.getElementById("starId");
+  let imagen5 = document.getElementById("nombreSeleccionado");
 
   // Agrega un evento de clic al botón
   botonAnimaciones.addEventListener("click", function () {
-
     // Agrega clases CSS con animaciones a las imágenes
     imagen1.classList.toggle("animar");
     imagen2.classList.toggle("animar");
     imagen3.classList.toggle("animar");
     imagen4.classList.toggle("animar");
+    imagen5.classList.toggle("animar");
+
+    seleccionarAleatorio();
   });
 });
