@@ -14,7 +14,7 @@ function agregarNombre() {
 
     // Crear un nuevo elemento de lista (<li>) y agregarlo a la lista
     const li = document.createElement("li");
-    li.innerHTML = `${camper} <button onclick="borrarNombre(${
+    li.innerHTML = `<p>${camper}</p> <button onclick="borrarNombre(${
       listaCampers.length - 1
     })"  ><img class="btn-cerrar" src="/static/img/borrar-03.svg" alt="cerrar"  /></button>`;
     elementCampers.appendChild(li);
@@ -51,7 +51,7 @@ function seleccionarAleatorio() {
 
     // Muestra el nombre seleccionado en el div 'nombreSeleccionado'
     const nombreSeleccionadoDiv = document.getElementById("nombreSeleccionado");
-    nombreSeleccionadoDiv.textContent = `Victima: ${selectedName}`;
+    nombreSeleccionadoDiv.textContent = `Victima:${selectedName}`;
   }
 }
 
@@ -77,6 +77,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-//añadir sonido al hacer click
+let sound = new Audio('/static/mp3/ringtones-x-files.mp3')
 
-let sound = new Audio()
+playBtn.addEventListener('click', ()=>{
+    sound.play();
+});
