@@ -215,14 +215,12 @@ body{
 
 .fondo-two{
     width:100%;
+    height: 300px;
     object-fit: cover;
     position: absolute;
     bottom: 0;
 }
 
-audio{
-    display:none;
-}
 
 .titulo{
     font-family:alien;
@@ -246,6 +244,11 @@ audio{
     margin-right: 15px;
     background-color: rgba(11, 228, 11, 0.356);
     border: 3px solid rgb(11, 228, 11);
+    cursor: pointer;
+}
+
+.img-start{
+    width: 45px;
 }
 
 .btn-rest{
@@ -254,15 +257,61 @@ audio{
     border-radius: 50%;
     background-color: rgba(255, 153, 0, 0.37);
     border: 3px solid rgb(255, 187, 0);
+    cursor: pointer;
 }
 
+.restart{
+    width: 22px;
+}
 
+.btn-rest:hover{
+    .restart{
+        transform: scale(1.1);
+    }
+}
+
+.btn-start:hover{
+    .img-start{
+        transform: scale(1.1);
+    }
+}
 
 .section-animation{
     position: absolute;
-    width: 40%;
-    height: 80vh;
+    width: 600px;
+    height: 70%;
     z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.star{
+    width:12px;
+    position: absolute;
+    right: 20px;
+    top: 40px;
+    opacity: 0;
+}
+
+.animar.star{
+    width:12px;
+    position: absolute;
+    right: 20px;
+    top: 40px;
+    opacity: 0;
+}
+
+@keyframes star {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
 }
 
 .ovni{
@@ -270,8 +319,16 @@ audio{
     /* top: 150px;
     left: 100px; */
     position:absolute;
-    animation: intrOvni 9s ease-in-out;
     z-index: 9999;
+}
+
+.animar.ovni{
+    width: 0px;
+    /* top: 150px;
+    left: 100px; */
+    position:absolute;
+    z-index: 9999;
+    animation: intrOvni 9s ease-in-out;
 }
 
 @keyframes intrOvni {
@@ -282,41 +339,50 @@ audio{
     }
 
     20%{
-        width: 330px;
-        top: 100px;
-        right: 100px;
+        width: 255px;
+        top: 12%;
+        right: 25%;
     }
     40%{
-        width: 330px;
-        top: 110px;
-        right: 100px;
+        width: 255px;
+        top: 13%;
+        right: 25%;
     }
 
     60%{
-        width: 330px;
-        top: 100px;
-        right: 100px;
+        width: 255px;
+        top: 12%;
+        right: 25%;
     }
 
     80%{
-        width: 330px;
-        top: 110px;
-        right: 100px;
+        width: 255px;
+        top: 13%;
+        right: 25%;
     }
 
     100% {
         width: 0px;
-        top: 0px;
+        top: 12%;
         right: 0px;
     }
   }
 
 .resplandor{
-    height: 450px;
-    width: 180px;
+    height: 250px;
+    width: 200px;
     position: absolute;
-    top: 235px;
-    left: 170px;
+    top: 32%;
+    left: 36%;
+    opacity: 0;
+}
+
+.animar.resplandor{
+    height: 250px;
+    width: 200px;
+    position: absolute;
+    top: 32%;
+    left: 36%;
     animation: resplandorAnimation 7s;
     animation-delay: 1.5s;
     opacity: 0;
@@ -334,14 +400,23 @@ audio{
     }
 }
 
-.person{
-    width: 90px;
+.animar.person{
+    width: 75px;
     position: absolute;
     bottom: 0px;
-    left: 40%;
+    left: 47%;
     animation: personAnimation 4s;
     animation-delay: 2.5s;
     opacity: 0;
+}
+
+.person{
+    width: 75px;
+    position: absolute;
+    bottom: 0px;
+    left: 47%;
+    opacity: 0;
+    
 }
 
 @keyframes personAnimation {
@@ -349,21 +424,33 @@ audio{
         opacity: 0;
         bottom: 0px;
     }
-    35%{
+    25%{
         opacity: 1;
-        bottom: 200px;
+        bottom: 27%;
+    }
+    45%{
+        opacity: 1;
+        bottom: 25%;
     }
     55%{
         opacity: 1;
-        bottom: 190px;
+        bottom: 27%;
+
     }
     75%{
         opacity: 1;
-        bottom: 200px;
+        bottom: 25%;
 
     }
     100%{
         opacity: 0;
-        bottom: 380px;
+        bottom: 70%;
     }
 }
+
+.id-select{
+    font-size:2.5rem;
+    z-index: 10000;
+    font-family: alien;
+}
+
