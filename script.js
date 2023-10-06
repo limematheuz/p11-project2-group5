@@ -77,6 +77,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-//añadir sonido al hacer click
+let sound = new Audio('/static/mp3/ringtones-x-files.mp3')
 
-let sound = new Audio()
+playBtn.addEventListener('click', ()=>{
+    sound.play();
+});

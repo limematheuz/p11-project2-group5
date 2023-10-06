@@ -224,7 +224,7 @@ body{
 
 .titulo{
     font-family:alien;
-    color: rgb(11, 228, 11);
+    color: rgba(11, 228, 11, 0.719);
     font-size: 4rem;
     text-align: center;
 }
@@ -500,3 +500,6 @@ ul[type=text]{
     text-align: center;
 }
 
+audio{
+    
+}
